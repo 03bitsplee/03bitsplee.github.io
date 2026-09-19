@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="落花流水共添悲 - 深度解读成语典故、历史出处、近义词辨析及现代应用场景，探索“落花有意流水无情”背后的情感哲理与文化内涵。">
+    <meta name="keywords" content="落花流水共添悲, 成语典故, 历史出处, 成语解释, 情感哲理, 中文词汇">
+    <title>落花流水共添悲 - 成语典故与情感文化深度解读</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #5d4037;
+            --secondary-color: #8d6e63;
+            --accent-color: #d84315;
+            --bg-color: #f9f7f2;
+            --card-bg: #ffffff;
+            --text-main: #2c2c2c;
+            --text-light: #666666;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(93, 64, 55, 0.85), rgba(93, 64, 55, 0.7)), url('https://picsum.photos/seed/flower_water/1920/600.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        main {
+            padding-bottom: 4rem;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            nav ul {
+                display: none; /* Simplified mobile handling */
+            }
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Definition Card */
+        .definition-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .pinyin {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .meaning {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .meaning strong {
+            color: var(--accent-color);
+        }
+
+        .note {
+            background-color: #fff3e0;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            font-size: 0.95rem;
+            color: #e65100;
+            border-left: 4px solid #ffb74d;
+        }
+
+        /* Usage Grid */
+        .usage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .usage-item {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+        }
+
+        .usage-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .usage-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .usage-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .usage-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Stories List */
+        .story-list {
+            list-style: none;
+        }
+
+        .story-item {
+            background: var(--card-bg);
+            margin-bottom: 1rem;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 600px) {
+            .story-item {
+                flex-direction: row;
+                height: 180px;
+            }
+        }
+
+        .story-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        @media (min-width: 600px) {
+            .story-img {
+                width: 200px;
+                height: 100%;
+            }
+        }
+
+        .story-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .story-content h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .story-content p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .sidebar-widget {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .widget-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+            color: var(--primary-color);
+        }
+
+        .synonym-list {
+            list-style: none;
+        }
+
+        .synonym-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f5f5f5;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .synonym-list li:last-child {
+            border-bottom: none;
+        }
+
+        .antonym-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f5f5f5;
+            color: var(--text-light);
+        }
+
+        .antonym-list li:last-child {
+            border-bottom: none;
+        }
+
+        .qa-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .qa-question {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .qa-answer {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3e2723;
+            color: #d7ccc8;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            font-size: 0.9rem;
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo">
+            <span>文</span>心解词
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#meaning">释义</a></li>
+                <li><a href="#usage">用法</a></li>
+                <li><a href="#story">典故</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>落花流水共添悲</h1>
+        <p>探索这句充满画面感与情感色彩的成语，解读其背后的历史典故与现代应用。</p>
+    </div>
+</section>
+
+<main class="container">
+    <div class="content-grid">
+        <!-- Left Column -->
+        <div class="main-content">
+            <section id="meaning">
+                <h2 class="section-title">基本释义</h2>
+                <div class="definition-card">
+                    <div class="pinyin">luò huā liú shuǐ gòng tiān bēi</div>
+                    <p class="meaning">
+                        <strong>落花流水共添悲</strong>，通常指落花随流水飘零，景象凄凉，更增添了几分悲伤的情绪。该词组常用来形容美好的事物遭遇不幸而衰败，或者形容离别时的凄美景象。
+                    </p>
+                    <div class="note">
+                        <strong>注意：</strong>此词常与“落花有意，流水无情”连用，强调单方面的情感付出与冷漠回应之间的反差，从而引发“共添悲”的凄凉结果。
+                    </div>
+                </div>
+            </section>
+
+            <section id="usage">
+                <h2 class="section-title">应用场景</h2>
+                <div class="usage-grid">
+                    <article class="usage-item">
+                        <span class="usage-icon">💔</span>
+                        <h3 class="usage-title">情感失恋</h3>
+                        <p class="usage-desc">形容一方深情相待，另一方却决绝离去，最终留下满地落花般的凄凉。</p>
+                    </article>
+                    <article class="usage-item">
+                        <span class="usage-icon">🍂</span>
+                        <h3 class="usage-title">季节更替</h3>
+                        <p class="usage-desc">描写暮春时节，花瓣凋零，流水东去，引发对时光流逝的感伤。</p>
+                    </article>
+                    <article class="usage-item">
+                        <span class="usage-icon">🚢</span>
+                        <h3 class="usage-title">离别送别</h3>
+                        <p class="usage-desc">古人送别时，常以落花流水喻指身不由己的漂泊与离愁别绪。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="story">
+                <h2 class="section-title">历史典故与文学</h2>
+                <div class="story-list">
+                    <article class="story-item">
+                        <img src="https://picsum.photos/seed/ancient_poetry/400/300" alt="古代诗词意境" class="story-img">
+                        <div class="story-content">
+                            <h3>诗词中的意象</h3>
+                            <p>在中国古典诗词中，“落花”与“流水”是极具象征意义的意象。落花常象征美好的逝去或女子的青春；流水则象征时间的流逝或离别的无奈。二者结合，便构成了“共添悲”的悲剧美学。</p>
+                            <a href="#" class="read-more">阅读更多赏析 &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="story-item">
+                        <img src="https://picsum.photos/seed/landscape/400/300" alt="山水风景" class="story-img">
+                        <div class="story-content">
+                            <h3>白居易《大林寺桃花》</h3>
+                            <p>虽然原诗表达的是惊喜，但“长恨春归无觅处”所引发的愁绪，常被后世文人借由“落花流水”的意象来进一步渲染春逝的哀愁。</p>
+                            <a href="#" class="read-more">查看更多引用 &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Sidebar -->
+        <aside>
+            <div class="sidebar-widget">
+                <h3 class="widget-title">近义词辨析</h3>
+                <ul class="synonym-list">
+                    <li><span>花残月缺</span> <span>形容不圆满</span></li>
+                    <li><span>断肠人在天涯</span> <span>形容极度悲伤</span></li>
+                    <li><span>触景生情</span> <span>因眼前景物而引起情感</span></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3 class="widget-title">反义词参考</h3>
+                <ul class="antonym-list">
+                    <li>欢聚一堂</li>
+                    <li>春风得意</li>
+                    <li>喜气洋洋</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget" id="faq">
+                <h3 class="widget-title">常见问题 (FAQ)</h3>
+                <div class="qa-item">
+                    <span class="qa-question">“落花流水共添悲”是成语吗？</span>
+                    <p class="qa-answer">它更多是一个词组或文学意象，常作为成语“落花有意，流水无情”的补足语或情感延伸，强调悲伤的结果。</p>
+                </div>
+                <div class="qa-item">
+                    <span class="qa-question">如何正确使用？</span>
+                    <p class="qa-answer">建议用于形容失恋、离别或感叹时光流逝的语境中，避免用于形容积极向上的场合。</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">成语库</a>
+            <a href="#">文学赏析</a>
+            <a href="#">联系方式</a>
+        </div>
+        <p class="copyright">Copyright &copy; 2023 文心解词. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
