@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="健儿马足疗机官方品牌页面，提供专业足疗按摩机选购指南、产品功能介绍、使用场景分析及用户常见问题解答，帮助您选择适合的家庭健康护理设备。">
+    <meta name="keywords" content="健儿马足疗机,足疗机,按摩椅,家用足底按摩器,健康养生">
+    <title>健儿马足疗机-专业家用足部按摩与健康护理设备推荐</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #00897b;
+            --primary-dark: #00695c;
+            --accent-color: #ff6f00;
+            --text-main: #333333;
+            --text-light: #666666;
+            --bg-body: #f9fbfd;
+            --bg-white: #ffffff;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 8px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-menu a {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 100%);
+            padding: 80px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        /* Features Grid */
+        .features {
+            background-color: var(--bg-white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            border-radius: var(--border-radius);
+            background-color: #fafafa;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            background-color: white;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Product Showcase */
+        .product-showcase {
+            background-color: var(--bg-body);
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-img {
+            height: 200px;
+            background-color: #eee;
+            overflow: hidden;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-tag {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            background-color: #e0f2f1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            align-self: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .product-info h3 {
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .product-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            flex: 1;
+        }
+
+        .product-specs {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 15px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        .product-specs li {
+            margin-bottom: 4px;
+        }
+
+        .product-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .product-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* Usage Guide / Scenarios */
+        .scenarios {
+            background-color: var(--bg-white);
+        }
+
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .scenario-item {
+            position: relative;
+            height: 300px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .scenario-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .scenario-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .scenario-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            padding: 30px 20px 20px;
+            color: white;
+        }
+
+        .scenario-overlay h3 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .scenario-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: #f1f8e9;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: white;
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: #fafafa;
+        }
+
+        .faq-answer p {
+            padding: 0 20px 20px;
+            color: var(--text-light);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #263238;
+            color: #b0bec5;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #37474f;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero-content {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero-text p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .scenario-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span>健儿马</span>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#features">核心优势</a></li>
+                    <li><a href="#products">热销机型</a></li>
+                    <li><a href="#scenarios">适用场景</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#products" class="cta-btn">立即选购</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>回归自然，缓解疲劳<br>健儿马足疗机为您护航</h1>
+                    <p>针对现代人久站久坐、足部酸胀痛点设计。采用仿人手揉捏、气压热敷技术，为您提供专业级家庭足底按摩体验。</p>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-start;">
+                        <a href="#products" class="cta-btn" style="padding: 12px 30px; font-size: 1.1rem;">查看产品系列</a>
+                        <a href="#scenarios" style="border: 1px solid var(--primary-color); color: var(--primary-color); padding: 10px 25px; border-radius: var(--border-radius);">了解适用人群</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder for a high quality massage machine image -->
+                    <img src="https://picsum.photos/seed/massage/600/400" alt="健儿马足疗机产品展示" width="600" height="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>为什么选择健儿马？</h2>
+                    <p>融合传统中医理论与现代人体工学设计</p>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">✋</div>
+                        <h3>仿人手揉捏</h3>
+                        <p>特制按摩滚轮模拟专业技师指腹与手掌力度，针对涌泉穴及足底反射区进行深层按压。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🌡️</div>
+                        <h3>恒温热敷系统</h3>
+                        <p>内置远红外加热模块，持续提供38℃-42℃恒温热敷，有效促进足部血液循环。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">💪</div>
+                        <h3>强力气压支撑</h3>
+                        <p>多区气囊包裹，针对足底、足侧及小腿部位进行交替充气，深层放松紧绷肌肉。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>安全静音设计</h3>
+                        <p>低噪音电机运行，静音运行不扰民；多重安全保护机制，保障家庭使用安全。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase -->
+        <section id="products" class="section product-showcase">
+            <div class="container">
+                <div class="section-title">
+                    <h2>热销产品系列</h2>
+                    <p>满足不同家庭场景的健康护理需求</p>
+                </div>
+                <div class="product-list">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="https://picsum.photos/seed/foot1/400/300" alt="健儿马经典款足疗机">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-tag">人气爆款</span>
+                            <h3>健儿马 经典尊享版</h3>
+                            <p>适合追求极致性价比的家庭。具备全自动滚动、强中弱三档调节，拥有宽敞的足部空间。</p>
+                            <ul class="product-specs">
+                                <li>✓ 4D立体滚轮按摩</li>
+                                <li>✓ 智能温控热敷</li>
+                                <li>✓ 60分钟自动停机</li>
+                            </ul>
+                            <a href="#" class="product-btn">查看详情</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="https://picsum.photos/seed/foot2/400/300" alt="健儿马豪华足疗机">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-tag">高端旗舰</span>
+                            <h3>健儿马 豪华全景版</h3>
+                            <p>升级小腿气囊包裹，增加足弓深度按摩，针对办公久坐族设计，缓解下肢水肿。</p>
+                            <ul class="product-specs">
+                                <li>✓ 全小腿气囊按摩</li>
+                                <li>✓ 3D深度足底按摩</li>
+                                <li>✓ USB充电便携设计</li>
+                            </ul>
+                            <a href="#" class="product-btn">查看详情</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="https://picsum.photos/seed/foot3/400/300" alt="健儿马便携式足疗机">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-tag">便携家用</span>
+                            <h3>健儿马 轻松便携版</h3>
+                            <p>小巧轻便，不占空间，适合租房族及小户型。一键启动，随按随停，操作简单。</p>
+                            <ul class="product-specs">
+                                <li>✓ 一键自动模式</li>
+                                <li>✓ 超薄机身设计</li>
+                                <li>✓ USB直插电源</li>
+                            </ul>
+                            <a href="#" class="product-btn">查看详情</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scenarios Section -->
+        <section id="scenarios" class="section scenarios">
+            <div class="container">
+                <div class="section-title">
+                    <h2>谁需要使用健儿马？</h2>
+                    <p>针对特定人群的足部健康护理方案</p>
+                </div>
+                <div class="scenario-grid">
+                    <div class="scenario-item">
+                        <img src="https://picsum.photos/seed/office/600/400" alt="办公室白领">
+                        <div class="scenario-overlay">
+                            <h3>久坐办公族</h3>
+                            <p>长时间站立或坐着工作，导致下肢血液循环不畅，足部酸胀麻木。</p>
+                        </div>
+                    </div>
+                    <div class="scenario-item">
+                        <img src="https://picsum.photos/seed/elderly/600/400" alt="中老年群体">
+                        <div class="scenario-overlay">
+                            <h3>中老年群体</h3>
+                            <p>新陈代谢减慢，足部容易怕冷，需要通过热敷按摩来保持身体活力。</p>
+                        </div>
+                    </div>
+                    <div class="scenario-item">
+                        <img src/seed/athlete/600/400" alt="运动健身爱好者">
+                        <div class="scenario-overlay">
+                            <h3>运动健身爱好者</h3>
+                            <p>高强度运动后，足部肌肉疲劳，使用足疗机加速乳酸代谢与恢复。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2>常见问题解答</h2>
+                    <p>关于健儿马足疗机的使用与维护</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">足疗机适合所有人使用吗？</div>
+                        <div class="faq-answer">
+                            <p>大部分人群适合使用，但孕妇、严重静脉曲张患者、足部有急性炎症或开放性伤口的人群建议遵医嘱或暂停使用。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">按摩力度可以调节吗？</div>
+                        <div class="faq-answer">
+                            <p>是的，健儿马系列产品均配备力度调节功能（如强/中/弱三档），您可以根据自己的承受能力和舒适度进行选择。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">使用时噪音大吗？</div>
+                        <div class="faq-answer">
+                            <p>我们采用静音电机设计，正常使用环境下的噪音控制在50分贝以内，基本不会影响家人休息。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">如何清洁和保养？</div>
+                        <div class="faq-answer">
+                            <p>建议使用湿布擦拭机身表面，按摩滚轮部分可定期拆下清洗。请避免使用腐蚀性清洁剂，并确保在断电状态下操作。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>健儿马品牌</h4>
+                    <p>致力于为全球家庭提供高品质的足部健康护理解决方案，让健康触手可及。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#features">核心优势</a></li>
+                        <li><a href="#products">产品中心</a></li>
+                        <li><a href="#scenarios">适用场景</a></li>
+                        <li><a href="#faq">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>客服热线：400-123-4567</li>
+                        <li>电子邮箱：support@jianermama.com</li>
+                        <li>工作时间：周一至周日 9:00-21:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 健儿马足疗机 版权所有 | 仅供设计展示使用</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+  </html>
