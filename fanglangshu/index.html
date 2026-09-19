@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="防狼术 - 专业防身自卫课程指南，涵盖实用的防身技巧、逃脱方法、法律常识及心理建设，帮助女性和弱势群体在紧急情况下保护自身安全。">
+    <meta name="keywords" content="防狼术,防身术,自卫技巧,女性安全,逃脱方法,防身课程">
+    <title>防狼术 - 实用防身自卫技巧与安全指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --primary-dark: #b71c1c;
+            --secondary-color: #212121;
+            --text-main: #333333;
+            --text-light: #666666;
+            --bg-body: #f9f9f9;
+            --bg-white: #ffffff;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+            --border-radius: 8px;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: var(--spacing-unit);
+            color: var(--secondary-color);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .section-desc {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--secondary-color);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background-color: var(--primary-color);
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .cta-button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://picsum.photos/seed/selfdefense/1920/800') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--secondary-color);
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        /* Core Concepts Section */
+        .concepts {
+            padding: 80px 0;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .concept-card {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            border-top: 4px solid var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .concept-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .concept-card h3 {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .concept-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Techniques Section */
+        .techniques {
+            background-color: var(--bg-white);
+            padding: 80px 0;
+        }
+
+        .technique-category {
+            margin-bottom: 50px;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .category-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #eee;
+            margin-right: 20px;
+            line-height: 1;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+
+        .technique-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .technique-item {
+            display: flex;
+            gap: 15px;
+            background: var(--bg-body);
+            padding: 20px;
+            border-radius: var(--border-radius);
+        }
+
+        .step-num {
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .step-content p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Safety Tips Section */
+        .safety-tips {
+            padding: 80px 0;
+            background-color: #e8f5e9;
+        }
+
+        .tips-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .tips-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .tip-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .tip-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .tip-list li::after {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 18px;
+            width: 6px;
+            height: 6px;
+            background-color: #2e7d32;
+            border-radius: 50%;
+        }
+
+        .tip-image img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+        }
+
+        .faq-item {
+            background-color: var(--bg-white);
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--bg-white);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--text-light);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px;
+            max-height: 200px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: #aaa;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .tips-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                防狼术<span>指南</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#concepts">核心概念</a></li>
+                    <li><a href="#techniques">实用技巧</a></li>
+                    <li><a href="#tips">安全建议</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#contact" class="cta-button">开始学习</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>防狼术：掌握生存技能，守护生命安全</h1>
+                <p>专业的防身自卫指南，教授您在遭遇危险时的心理建设、逃脱技巧与反击方法。</p>
+                <div class="hero-buttons">
+                    <a href="#techniques" class="btn btn-primary">学习防身技巧</a>
+                    <a href="#tips" class="btn btn-secondary">了解安全常识</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Concepts -->
+        <section id="concepts" class="concepts">
+            <div class="container">
+                <h2 class="section-title">防身术的三大核心</h2>
+                <p class="section-desc">真正的防身不仅仅是格斗，更是对局势的判断与反应。以下三个核心要素构成了有效的防身体系。</p>
+                
+                <div class="concept-grid">
+                    <article class="concept-card">
+                        <span class="concept-icon">🧠</span>
+                        <h3>心理建设</h3>
+                        <p>在危机时刻保持冷静是生存的关键。恐惧会导致僵住或动作变形，训练自己快速评估危险等级，并做出果断反应。</p>
+                    </article>
+                    <article class="concept-card">
+                        <span class="concept-icon">🏃</span>
+                        <h3>逃跑优先</h3>
+                        <p>生命安全高于一切。如果有机会，应利用环境优势迅速脱离接触。防身术的最终目的是让你有足够的体力跑向安全地带。</p>
+                    </article>
+                    <article class="concept-card">
+                        <span class="concept-icon">💪</span>
+                        <h3>关键反击</h3>
+                        <p>当无法逃脱时，利用人体脆弱部位（如眼睛、喉结、下阴）进行短暂且猛烈的攻击，目的是制造破绽以便逃跑。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Techniques -->
+        <section id="techniques" class="techniques">
+            <div class="container">
+                <h2 class="section-title">实战防身技巧</h2>
+                <p class="section-desc">针对常见袭击场景的应对策略，强调简单、有效、易记。</p>
+
+                <div class="technique-category">
+                    <div class="category-header">
+                        <span class="category-number">01</span>
+                        <h3 class="category-title">遭遇拖拽时的解脱</h3>
+                    </div>
+                    <div class="technique-list">
+                        <div class="technique-item">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <h4>破坏平衡</h4>
+                                <p>利用对方的惯性，猛地向其身后推或拉，使其失去重心摔倒。</p>
+                            </div>
+                        </div>
+                        <div class="technique-item">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <h4>借力打力</h4>
+                                <p>抓住对方手腕或衣领，顺势扭转身体，利用杠杆原理挣脱控制。</p>
+                            </div>
+                        </div>
+                        <div class="technique-item">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <h4>踢击要害</h4>
+                                <p>若无法挣脱，立即用膝盖猛击对方大腿内侧或小腿迎面骨。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technique-category">
+                    <div class="category-header">
+                        <span class="category-number">02</span>
+                        <h3 class="category-title">遭遇锁喉/勒颈时的应对</h3>
+                    </div>
+                    <div class="technique-list">
+                        <div class="technique-item">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <h4>双手抓握</h4>
+                                <p>迅速伸出双手，交叉抓住对方的手臂或手腕，尽量拉开距离。</p>
+                            </div>
+                        </div>
+                        <div class="technique-item">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <h4>攻击关节</h4>
+                                <p>用拇指用力按压对方手腕内侧的神经，或用额头猛击对方鼻梁。</p>
+                            </div>
+                        </div>
+                        <div class="technique-item">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <h4>寻找空隙</h4>
+                                <p>一旦对方松手，立即后退并大声呼救，切勿纠缠。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Tips -->
+        <section id="tips" class="safety-tips">
+            <div class="container">
+                <div class="tips-container">
+                    <div class="tips-content">
+                        <h2>日常生活中的防身建议</h2>
+                        <ul class="tip-list">
+                            <li>始终将人身安全放在首位，避免前往偏僻、照明不足的区域。</li>
+                            <li>走在路上时，保持警觉，避免长时间低头看手机，留意周围环境。</li>
+                            <li>尽量结伴而行，避免单独行动在深夜的偏僻路段。</li>
+                            <li>学会观察周围人的行为举止，对异常情况保持敏感。</li>
+                            <li>随身携带防身喷雾或报警器等辅助工具，但切记正确使用方法。</li>
+                            <li>牢记报警电话，在确保自身安全的前提下迅速拨打。</li>
+                        </ul>
+                    </div>
+                    <div class="tip-image">
+                        <img src="https://picsum.photos/seed/safety/600/400" alt="安全意识与防身准备">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">常见问题解答</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">防身术需要长期的专业训练吗？</div>
+                        <div class="faq-answer">对于普通人群，不需要像运动员一样进行长期专业训练。掌握基本的逃脱原理和人体弱点攻击方法，通过短期的模拟训练形成肌肉记忆即可应对突发状况。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">女性是否适合学习防身术？</div>
+                        <div class="faq-answer">非常适合。女性在力量上往往处于劣势，因此防身术更强调利用环境、心理博弈和攻击对方薄弱部位，而非单纯的力量对抗。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">使用防身喷雾有哪些注意事项？</div>
+                        <div class="faq-answer">使用前必须了解风向，确保喷射方向朝向自己，以免被风吹回误伤。使用后应迅速撤离现场，并立即报警。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">被歹徒控制住后，反击是否合法？</div>
+                        <div class="faq-answer">法律允许在面临紧迫的人身安全威胁时进行正当防卫。但反击的力度应以“制止不法侵害”为限，避免造成不必要的过度伤害。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>防狼术指南</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">致力于提供科学、实用的防身自卫知识，帮助每一个人增强安全意识，掌握生存技能。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#concepts">核心概念</a></li>
+                        <li><a href="#techniques">实战技巧</a></li>
+                        <li><a href="#tips">安全建议</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>免责声明</h4>
+                    <ul>
+                        <li><a href="#">安全警告</a></li>
+                        <li><a href="#">法律声明</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 防狼术指南 版权所有. 本网站内容仅供参考，不构成专业法律或医疗建议。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                      </html>
