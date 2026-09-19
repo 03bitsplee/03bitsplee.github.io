@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="魔界天使 - 探索异界天使传说、恶魔契约与救赎之路的深度指南。收录经典作品解析、角色图鉴、世界观设定及同人创作资源。">
+    <meta name="keywords" content="魔界天使,天使,恶魔,异界,奇幻,动漫,角色图鉴,世界观">
+    <title>魔界天使-异界天使传说与恶魔契约深度指南</title>
+    <style>
+        :root {
+            --primary-color: #d4af37;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-dark: #0f0f13;
+            --bg-card: #1a1a20;
+            --text-main: #ecf0f1;
+            --text-muted: #bdc3c7;
+            --spacing-unit: 1rem;
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: rgba(15, 15, 19, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: var(--text-main);
+            outline: none;
+            width: 200px;
+            transition: var(--transition);
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary-color);
+            width: 240px;
+        }
+
+        /* Hero 区域 */
+        .hero {
+            position: relative;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                        url('https://picsum.photos/seed/angel-demon/1920/1080.jpg') center/cover no-repeat;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, transparent 0%, var(--bg-dark) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            background: linear-gradient(45deg, #fff, var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--bg-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: #f1c40f;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            margin-left: 10px;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--bg-dark);
+        }
+
+        /* 主要内容区 */
+        main {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 15px;
+        }
+
+        .section-title h2 {
+            font-size: 1.8rem;
+            color: var(--text-main);
+            margin-bottom: 5px;
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* 角色卡片网格 */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .card-image {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            background-color: #333;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 15px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* 世界观设定 */
+        .world-section {
+            background-color: #16161c;
+            padding: 60px 0;
+            margin-top: 60px;
+        }
+
+        .world-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .world-image {
+            width: 100%;
+            height: 400px;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .world-content h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .world-content p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .info-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            color: var(--text-muted);
+        }
+
+        .info-list li::before {
+            content: '•';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+            line-height: 1rem;
+        }
+
+        /* 常见问题 FAQ */
+        .faq-section {
+            padding: 60px 0;
+        }
+
+        .faq-item {
+            background-color: var(--bg-card);
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: rgba(255,255,255,0.02);
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            color: var(--text-muted);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px 20px;
+            max-height: 200px;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #0a0a0c;
+            padding: 50px 0 20px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            color: var(--text-muted);
+            margin-top: 15px;
+            font-size: 0.9rem;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            color: var(--text-main);
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: #555;
+            font-size: 0.8rem;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .search-box {
+                display: none;
+            }
+
+            .world-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .world-image {
+                height: 250px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-brand p {
+                margin: 15px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <span>魔界天使</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#characters">角色图鉴</a></li>
+                    <li><a href="#world">世界观</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索天使、恶魔或剧情...">
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>堕落的圣域与契约的回响</h1>
+            <p>探索魔界天使传说中，天使与恶魔交织的救赎之路。在这里，信仰与欲望的界限被重新定义，每一份契约都承载着无法言说的命运。</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('characters').scrollIntoView({behavior: 'smooth'})">探索角色</button>
+                <button class="btn btn-outline" onclick="document.getElementById('world').scrollIntoView({behavior: 'smooth'})">阅读设定</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- 角色推荐 -->
+        <section id="characters" class="section">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2>经典角色图鉴</h2>
+                    <p>了解魔界天使世界中核心角色的背景、能力与命运</p>
+                </div>
+                <a href="#" style="color: var(--primary-color); font-size: 0.9rem;">查看全部 &rarr;</a>
+            </div>
+            
+            <div class="grid-layout">
+                <!-- Card 1 -->
+                <article class="card">
+                    <img src="https://picsum.photos/seed/angel1/400/300.jpg" alt="魔界天使主角" class="card-image">
+                    <div class="card-content">
+                        <span class="card-tag">主角</span>
+                        <h3>米迦勒·堕</h3>
+                        <p>曾经高居天界的炽天使，因违背神谕被放逐至魔界。在绝望中与恶魔签订了契约，试图寻找重返天庭的方法，内心在正义与复仇之间挣扎。</p>
+                        <div class="card-footer">
+                            <span class="stat-item">力量: S</span>
+                            <span class="stat-item">阵营: 混乱</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                    <img src="https://picsum.photos/seed/demon1/400/300.jpg" alt="恶魔契约者" class="card-image">
+                    <div class="card-content">
+                        <span class="card-tag">反派</span>
+                        <h3>路西法·影</h3>
+                        <p>魔界大公爵，善于玩弄人心。他欣赏米迦勒的堕落，视其为最完美的艺术品，不断诱导天使走向更深的深渊。</p>
+                        <div class="card-footer">
+                            <span class="stat-item">智力: S+</span>
+                            <span class="stat-item">阵营: 恶魔</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <img src="https://picsum.photos/seed/angel2/400/300.jpg" alt="中立角色" class="card-image">
+                    <div class="card-content">
+                        <span class="card-tag">中立</span>
+                        <h3>加百列</h3>
+                        <p>游走于两界之间的情报贩子，拥有预知未来的微弱能力。她保持中立，只为那些付出足够代价的人提供情报。</p>
+                        <div class="card-footer">
+                            <span class="stat-item">神秘: S</span>
+                            <span class="stat-item">阵营: 中立</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card">
+                    <img src="https://picsum.photos/seed/human/400/300.jpg" alt="人类观察者" class="card-image">
+                    <div class="card-content">
+                        <span class="card-tag">人类</span>
+                        <h3>凯尔</h3>
+                        <p>一名普通的现代人类，意外卷入了魔界天使的纷争。他的纯真成为了净化魔界黑暗的一股清流，也吸引了各方势力的注意。</p>
+                        <div class="card-footer">
+                            <span class="stat-item">成长: S</span>
+                            <span class="stat-item">阵营: 人类</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 世界观设定 -->
+        <section id="world" class="world-section">
+            <div class="container">
+                <div class="world-layout">
+                    <div class="world-content">
+                        <h3>魔界与天界的交汇点</h3>
+                        <p>在“魔界天使”的世界观中，天堂与地狱并非遥不可及的彼岸，而是通过名为“深渊裂缝”的通道紧密相连。这个世界没有绝对的善恶，只有立场与选择。</p>
+                        <p>天使并非总是纯洁无瑕，恶魔也并非全然邪恶。契约是维持世界平衡的关键，一旦违约，不仅会打破物理法则，更会引发灵魂的湮灭。</p>
+                        <ul class="info-list">
+                            <li><strong>深渊裂缝：</strong>两界能量交换的枢纽，常发生能量暴走。</li>
+                            <li><strong>契约法典：</strong>限制魔力和寿命的规则，不可违背。</li>
+                            <li><strong>堕落机制：</strong>天使失去光环即代表彻底堕入黑暗。</li>
+                        </ul>
+                    </div>
+                    <img src="https://picsum.photos/seed/fantasy-angel/600/400.jpg" alt="魔界天使世界观示意图" class="world-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 FAQ -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title">
+                        <h2>常见问题解答</h2>
+                        <p>关于魔界天使设定、作品解析及观看指南</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>魔界天使的故事背景是怎样的？</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>故事主要围绕一名被放逐的天使在魔界的生存与抗争展开。他必须在保留人性与利用恶魔力量之间找到平衡，同时揭开神界与魔界背后隐藏的惊天阴谋。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>主角与恶魔签订契约的代价是什么？</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>契约并非无偿。主角以自己的“记忆”作为交换筹码，随着力量增强，他将逐渐遗忘重要的过往。这种设定增加了剧情的悲剧色彩和人物成长的复杂性。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>这类题材适合哪些读者群体？</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>适合喜欢奇幻冒险、黑暗童话以及探讨人性善恶的读者。作品融合了恋爱、战斗和哲学思考，节奏紧凑，适合对深度剧情有需求的二次元爱好者。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>在哪里可以观看完整的魔界天使系列？</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>请关注官方正版渠道。我们建议支持创作者，通过正规平台观看以获得最佳画质和字幕体验。同时，我们也整理了相关的同人志和设定集资源供爱好者交流。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span>魔界天使</span>
+                    </a>
+                    <p>致力于打造最全面的异界天使传说资料库，探索信仰与欲望的边界，记录每一份不朽的契约。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#characters">角色列表</a></li>
+                        <li><a href="#world">设定百科</a></li>
+                        <li><a href="#">同人作品</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="#">漫画连载</a></li>
+                        <li><a href="#">动画解析</a></li>
+                        <li><a href="#">周边商城</a></li>
+                        <li><a href="#">社区论坛</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="#">投稿建议</a></li>
+                        <li><a href="#">合作洽谈</a></li>
+                        <li><a href="#">版权声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 魔界天使专题站. All Rights Reserved. 本站内容仅供交流学习使用.
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+
+    <script>
+        // FAQ 交互逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他已打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+
+            // 简单的平滑滚动修正
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+                                  </html>
